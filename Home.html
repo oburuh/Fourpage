@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AUTOMOBILE MACHINERY</title>
+        <link rel="stylesheet" type="text/css" href="style5.css">
+    </head>
+    <body>
+        <header>
+            <div class="main">
+                <ul>
+                    <li class="active"><a href="home.html">Home</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </div>
+  
+        
+      <div class="form-horizontal">
+        <div class="form-group">
+          <form action="insert.php" method="POST">
+              <table>
+                 <tr>
+                  <td>
+                     NAME:
+                  </td>
+             <td>
+                 <input type="text" name="Name"required>
+             </td>
+                 </tr>
+                 <tr>
+                     <td>
+                         REGISTRATION NUMBER:
+                     </td>
+                     <td>
+                         <input type="text" name="Registrationnumber" placeholder="REGISTRATION NUMBER"required>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>
+                         E-MAIL:
+                     </td>
+                     <td>
+                         <input type="text" name="Email" placeholder="E-MAIL"required>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>
+                         CAR MODEL:
+                     </td>
+                     <td>
+                      <input type="text" name="carmodel" placeholder="CAR MODEL"required>
+                     </td>
+                 </tr>
+                     <tr>
+                         <td>
+                             NATIONALITY:
+                         </td>
+                         <td>
+                          <form name="myform" action="" method="POST">
+                          <input type="radio" name="Campus" value="MAIN"required> KENYAN;
+                          <input type="radio" name="Campus" value="TOWN"required> FOREIGNER;         
+                          </form>  
+                         </td>
+                     </tr>
+                     <tr>
+                         <td>
+                             NATIONAL ID:
+                         </td>
+                         <td>
+                             <input type="number" name="NationalID" placeholder= "NATIONAL ID"required>
+                         </td>
+                     </tr>
+                 </tr>
+              </table>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <table>
+             <tr>
+               <td>
+            <button type="submit" class=
+              "btn btn-default" id="generate">
+              Generate
+            </button>
+             </td>
+             </tr>
+             </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src=
+      "https://code.jquery.com/jquery-3.5.1.js">
+    </script>
+    
+    <script>
+      // Function to HTML encode the text
+      // This creates a new hidden element,
+      // inserts the given text into it 
+      // and outputs it out as HTML
+      function htmlEncode(value) {
+        return $('<div/>').text(value)
+          .html();
+      }
+    
+      $(function () {
+    
+       
+        $('#generate').click(function () {
+    
+          let finalURL =
+  'https://chart.googleapis.com/chart?cht=qr&chl=' +
+            htmlEncode($('#content').val()) +
+            '&chs=160x160&chld=L|0'
+    
+          $('.qr-code').attr('src', finalURL);
+        });
+      });
+    </script>
+
+            </div>
+
+        </header>
+    </body>
+</html>

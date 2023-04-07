@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+    justify-content: center;
+}
+.qr-code {
+    max-width: 500px;
+    margin: 10px;
+   
+  }
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(background.jpeg);
+    height: 133vh;
+    background-size: cover;
+    background-position: center;
+}
+
+
+ul{
+    float: right;
+    list-style-type: none;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 1s ease;
+}
+ul li a:hover{
+    background-color: #fff;
+    color:black;
+}
+ul li.active a{
+    color:rgb(255, 255, 255);
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.title{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title{
+    color: #fff;
+    font-size: 100px;
+
+        margin-left: auto;
+       margin-right: auto;
+margin-bottom: auto;
+margin-top: auto;
+}
+
+p{
+    font-size: 14px;
+    color: #fff;
+}
+h3{
+
+margin-left: auto;
+margin-right: auto;
+margin-bottom: auto;
+margin-top: auto;
+}
+table, th, td {
+  border:1px solid black;
+  border-collapse: !important;
+  color:#fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+  text-align: center;
+}
+table td th{
+    font-size: 18px;
+    color:rgb(255, 255, 255);
+    margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.student-profile .card {
+    border-radius: 10px;
+   
+  margin-bottom: auto;
+  margin-top: auto;
+}
+.student-profile .card .card-header .profile_img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    margin: 10px auto;
+    border: 10px solid #ccc;
+    border-radius: 50%;
+}
+.student-profile .card h3 {
+    font-size: 20px;
+    font-weight: 700px;
+}
+.student-profile .card p {
+    font-size: 16px;
+    color: white;
+}
+.student-profile .table th,
+.student-profile .table td {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: white;
+}
+.financial information .table th,
+.financial information .table td {
+    font-size: 14px;
+    padding: 5px 10px;
+    color: whitesmoke;
+    background: transparent;
+    margin-left: auto;
+    margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+} 
+.contact info{
+    width: 100%;
+    height: 500vh;
+    background-image: url(Dashboard.jpg);
+    background-position: center;
+    background-size: cover;
+    
+
+}   
+form{
+    width: 50%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 16px;
+    color: #fff;
+    align-items: center;
+   
+}
+.input-group{
+    margin-bottom: 10px;
+    position: relative;
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    background: transparent;
+    font-size: 15px;
+    color: #fff;
+    cursor: text;
+    margin-left: auto;
+    margin-right: auto;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+
+}
+button{
+    padding: 10px 0;
+    color:#fff;
+    outline: none;
+    background: transparent;
+    border: 1px solid #fff;
+    width: 50%;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+
+}
